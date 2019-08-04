@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>	
+<head>
+	<title>Shop</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../public/css/public.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/shop.css">
+   <link rel="stylesheet" type="text/css" href="../public/css/nav_styles.css">
+
+   <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+   <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+	
+	<div class="nav_all" style="font-size: 12px;">
+		<main class='container'>
+			<div class='wrap'>
+				<input type='checkbox' id='checking' style='display:none;' />
+				<button class='blob' ><a href="http://localhost:8080/about">☎</a></button>
+				<button class='blob'><a href="http://localhost:8080/pet">❤</a></button>
+				<button class='blob'><a href="http://localhost:8080/msgs">✉</a></button>
+				<button class='blob'><a href="http://localhost:8080/team">😘</a></button>
+				<button class='blob'><a href="http://localhost:8080/login" class='icon_login'>🚀</a></button>
+				<button class='blob'><a href="http://localhost:8080/shop" class='icon_login'>★</a></button>
+				<button class='blob'><a href="http://localhost:8080/food">✿</a></button>
+				<button class='blob'><a href="http://localhost:8080/">🔎</a></button>
+				<label class='blob' for='checking'>
+					<span class='bar'></span>
+					<span class='bar'></span>
+					<span class='bar'></span>
+				</label>
+			</div>
+		</main>
+		<svg>
+			<defs>
+				<filter id="filt">
+					<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
+					<feBlend in2="filt" in="SourceGraphic" result="mix" />
+				</filter>
+			</defs>
+		</svg>
+	</div>
+	
+   <div id="main">
+   		<div class="main_left">
+   
+   		<!-- 	<div class="pet" id="special">
+   				<button >+</button>
+   			</div> -->
+
+   		</div>
+   		<div class="main_right">
+            <!-- <div class="edit"> -->
+            <div class="edit">
+              <form id="form"  method="post  " role="form">
+                <div class="form-group">
+                   <input id="pic"  class="form-control" type="file" name="pic" required="required" autocomplete="off">
+                </div>
+                <div class="form-group">
+                   <label>name</label>
+                   <input id="name" class="form-control" type="text" name="name" required="required" placeholder="门门..." autocomplete="off">
+                </div>
+                <div class="form-group">
+                   <label>sign</label>
+                   <input id="sign" class="form-control" type="text" name="sign" required="required" placeholder="牌子..." autocomplete="off">
+                </div>
+                <div class="form-group">
+                   <label>type</label>
+                   <input id="type" class="form-control" type="text" name="type" required="required" placeholder="类型..." autocomplete="off">
+                </div>
+                <div class="form-group">
+                   <label>price</label>
+                   <input id="price" class="form-control" type="text" name="price" required="required" placeholder="价格..." autocomplete="off">
+                </div>
+                <div class="form-group">
+                 <label>Leve</label>
+                   <select class="form-control" id="grade" name="grade"  >
+                      <option value="1">⭐</option>
+                      <option value="2">⭐⭐</option>
+                      <option value="3">⭐⭐⭐</option>
+                      <option value="4">⭐⭐⭐⭐</option>
+                      <option value="5">⭐⭐⭐⭐⭐</option>
+                   </select>
+                </div>
+                <div class="form-group">
+                   <label >msg</label>
+                   <textarea id="msg" class="form-control" name="msg"></textarea>
+                </div>
+                <div class="form-group">
+                   <button id="submit" type="submit" class="btn btn-default btn-block">发表</button>
+                </div>
+             </form>
+         </div>
+      <div class="shown">
+        <div class="choose">
+                 
+                <input  id="bj" type="button" name="" value="编辑" class="btn btn-primary active" disabled="disabled"> </input>
+                
+                 <div id="detail">
+                    <p><span>宝贝儿名字：</span>门门...</p>
+                    <p><span>我的类型是：</span>小豚鼠...</p>
+                    <p><span>我的年龄：</span>我几岁啦...</p>
+                    <p><span>男孩女孩：</span>我还小我不知道...</p>
+                    <p><span>详细介绍：</span>详细介绍...</p>
+                    <p><span>我的身价：</span>我的身价...</p>
+                 </div>  
+         </div>
+        
+      </div>
+    </div>
+   </div>
+    <script type="text/javascript" src="../public/js/data.js"></script>
+   <!-- <script type="text/javascript" src="../public/js/pet.js"></script> -->
+   <script type="text/javascript" src="../public/js/shop.js"></script>
+   <script type="text/javascript" src="../public/js/pic.js"></script>
+   
+</body>
+</html>  

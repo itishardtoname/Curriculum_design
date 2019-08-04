@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>测试数据</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../public/css/nav_styles.css">
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li p:first-child{
+			font-size: 20px;
+			font-weight: bold;
+			background-color: #fcc;
+		}
+		li p span{
+			float: right;
+			background-color: #f66;
+			padding: 2px;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav_all" style="font-size: 12px;">
+		<main class='container'>
+			<div class='wrap'>
+				<input type='checkbox' id='checking' style='display:none;' />
+				<button class='blob' ><a href="http://localhost:8080/about">☎</a></button>
+				<button class='blob'><a href="http://localhost:8080/pet">❤</a></button>
+				<button class='blob'><a href="http://localhost:8080/msgs">✉</a></button>
+				<button class='blob'><a href="http://localhost:8080/team">😘</a></button>
+				<button class='blob'><a href="http://localhost:8080/login" class='icon_login'>🚀</a></button>
+				<button class='blob'><a href="http://localhost:8080/shop" class='icon_login'>★</a></button>
+				<button class='blob'><a href="http://localhost:8080/food">✿</a></button>
+				<button class='blob'><a href="http://localhost:8080/">🔎</a></button>
+				<label class='blob' for='checking'>
+					<span class='bar'></span>
+					<span class='bar'></span>
+					<span class='bar'></span>
+				</label>
+			</div>
+		</main>
+		<svg>
+			<defs>
+				<filter id="filt">
+					<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
+					<feBlend in2="filt" in="SourceGraphic" result="mix" />
+				</filter>
+			</defs>
+		</svg>
+	</div>
+	
+		<div class="nav_all" style="font-size: 12px;">
+		<main class='container'>
+			<div class='wrap'>
+				<input type='checkbox' id='checking' style='display:none;' />
+				<button class='blob' ><a href="http://127.0.0.1:8848/bhw/projects/views/login.html">&#x2605;</a></button>
+				<button class='blob'><a href="http://localhost:8080/pet">&#x2709;</a></button>
+				<button class='blob'><a href="http://localhost:8080/msgs">&#x2699;</a></button>
+				<button class='blob'><a href="http://localhost:8080/about">&#x2764;</a></button>
+				<button class='blob'><a href="http://localhost:8080/food">&#x270C;</a></button>
+				<button class='blob'><a href="http://localhost:8080/shop">&#x270E;</a></button>
+				<button class='blob'><a href="http://localhost:8080/">🔎</a></button>
+				<button class='blob'><a href="http://localhost:8080/msgs">&#x2706;</a></button>
+				<label class='blob' for='checking'>
+					<span class='bar'></span>
+					<span class='bar'></span>
+					<span class='bar'></span>
+				</label>
+			</div>
+		</main>
+		<svg>
+			<defs>
+				<filter id="filt">
+					<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
+					<feBlend in2="filt" in="SourceGraphic" result="mix" />
+				</filter>
+			</defs>
+		</svg>
+	</div>
+	
+	<h1>显示信息</h1>
+	<ul class="list-group">
+		{{each msgs msg index}}
+		<li class="list-group-item"> 
+			<p>{{msg.name}}</p>
+			<p>{{msg.content}}<span>{{msg.time}}</span></p>
+		</li>
+		{{/each}}
+
+	</ul>
+</body>
+</html>

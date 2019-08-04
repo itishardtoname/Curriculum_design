@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Message</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="../public/css/nav_styles.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/init.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/message.css">
+	
+	
+</head>
+<body>
+	
+	<div class="nav_all" style="font-size: 12px;">
+		<main class='container'>
+			<div class='wrap'>
+				<input type='checkbox' id='checking' style='display:none;' />
+				<button class='blob' ><a href="http://localhost:8080/about">☎</a></button>
+				<button class='blob'><a href="http://localhost:8080/pet">❤</a></button>
+				<button class='blob'><a href="http://localhost:8080/msgs">✉</a></button>
+				<button class='blob'><a href="http://localhost:8080/team">😘</a></button>
+				<button class='blob'><a href="http://localhost:8080/login" class='icon_login'>🚀</a></button>
+				<button class='blob'><a href="http://localhost:8080/shop" class='icon_login'>★</a></button>
+				<button class='blob'><a href="http://localhost:8080/food">✿</a></button>
+				<button class='blob'><a href="http://localhost:8080/">🔎</a></button>
+				<label class='blob' for='checking'>
+					<span class='bar'></span>
+					<span class='bar'></span>
+					<span class='bar'></span>
+				</label>
+			</div>
+		</main>
+		<svg>
+			<defs>
+				<filter id="filt">
+					<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
+					<feBlend in2="filt" in="SourceGraphic" result="mix" />
+				</filter>
+			</defs>
+		</svg>
+	</div>
+	
+    <div id="top">
+    	<a href="#">
+    		<h1 style="width: 50%;margin-left: 50px;color:#9e201f;">Message</h1>
+    	</a>
+    </div>
+    <div id="main">
+    	<div id="main_left">
+            <ul class="list-group">
+                {{each msgs msg index}}
+                    <li class="list-group-item"> 
+                        <p>{{msg.name}}</p>
+                        <p>{{msg.content}}<span>{{msg.time}}</span></p>
+                    </li>
+                {{/each}}
+            </ul>
+
+        </div>
+    	<div id="main_right">
+    		<h3>发布信息</h3>
+    		<form action="/add_msgs" method="get" role="form">
+    			<div class="form-group">
+    				<input class="form-control" type="text" name="name" required="required" placeholder="yourname..." autocomplete="off">
+    			</div>
+    			<div class="form-group">
+    				<textarea class="form-control" name="content" cols="30" required="required" rows="10" placeholder="yourContent..."></textarea>
+    			</div>
+    			<!-- <div class="form-group">
+    				<input class="form-control" type="file" id="inputfile">
+    			</div> -->
+    			<div class="form-group">
+    				<button type="submit" class="btn btn-default btn-block">发表</button>
+    			</div>
+    			
+				
+    		</form>
+    	</div>
+    </div>
+    <div id="foot">
+    	
+    </div>
+</body>
+</html>

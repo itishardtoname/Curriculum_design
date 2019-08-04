@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../public/css/team.css">
+<link rel="stylesheet" type="text/css" href="../public/css/nav_styles.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<style type="text/css"></style>
+</head>
+<body>
+	<div class="nav_all" style="font-size: 12px;background-color: transparent;">
+		<main class='container'>
+			<div class='wrap'>
+				<input type='checkbox' id='checking' style='display:none;' />
+				<button class='blob' ><a href="http://localhost:8080/about">☎</a></button>
+				<button class='blob'><a href="http://localhost:8080/pet">❤</a></button>
+				<button class='blob'><a href="http://localhost:8080/msgs">✉</a></button>
+				<button class='blob'><a href="http://localhost:8080/team">😘</a></button>
+				<button class='blob'><a href="http://localhost:8080/login" class='icon_login'>🚀</a></button>
+				<button class='blob'><a href="http://localhost:8080/shop" class='icon_login'>★</a></button>
+				<button class='blob'><a href="http://localhost:8080/food">✿</a></button>
+				<button class='blob'><a href="http://localhost:8080/">🔎</a></button>
+				<label class='blob' for='checking'>
+					<span class='bar'></span>
+					<span class='bar'></span>
+					<span class='bar'></span>
+				</label>
+			</div>
+		</main>
+		<svg>
+			<defs>
+				<filter id="filt">
+					<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
+					<feBlend in2="filt" in="SourceGraphic" result="mix" />
+				</filter>
+			</defs>
+		</svg>
+	</div>
+	
+	<div class="up">
+		<h1>OUR TEAM</h1>
+	</div>
+	<div class="down">
+		<!-- <div class="down-up">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo!</p>
+			<div id="name"> 	
+				<p>----XXX</p>
+			</div>
+		</div> -->
+		<div class="down-down">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+
+				<!-- 指示符 -->
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active" style="width: 90px; height: 90px;background-image: url(../public/img/团队1.jpg);  background-size: 80px 80px;border-radius: 50%;border:5px solid #ccc;
+						/*cursor: pointer; transition: all 1.5s;transform: scale(1.2);*/
+					"> <!-- <img id="picture" src="../public/img/团队1.jpg"50> --></li>
+					<li data-target="#demo" data-slide-to="1" style="width: 90px; height:90px;background-image: url(../public/img/团队2.jpg);  background-size: 80px 80px;background-repeat: no-repeat; border-radius: 50%;border:5px solid #ccc;"></li>
+					<li data-target="#demo" data-slide-to="2" style="width: 90px; height:90px;background-image: url(../public/img/团队3.jpg);  background-size: 80px 80px;border-radius: 50%;border:5px solid #ccc;"></li>
+				</ul>
+
+				<!-- 轮播图片 -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<p class="word">希望大家能够通过我们的店铺喜爱宠物，多了解了解人类的好朋友，和宠物友好相处，热爱生活，热爱动物。
+							<br><br><span>----姚锦</span>
+						</p>
+					</div>
+					<div class="carousel-item">
+						<p class="word">希望我们店铺所能查询到了解到的有用的，相关与宠物生活习性方面的知识能够让铲屎官们，对自家的宠物有更深一层的认识，科学的制定宠物计划，它们健健康康的，铲屎官们快快乐乐的，我们的工作就很有意义。
+							<br><br><span>----马文雯</span>
+						</p>
+					</div>
+					<div class="carousel-item">
+						<p class="word">如果有一天你想要养一只宠物，如果有一天你的宠物出现了各种状况 ，如果有一天你和自己的宠物发生了矛盾，希望我们店铺的出现，都能贴心的为您解决这些。
+							<br><br><span>----杜美竹</span>
+						</p>
+					</div>
+				</div>
+
+				<!-- 左右切换按钮 -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<!-- <span class="carousel-control-prev-icon"></span> -->
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<!-- <span class="carousel-control-next-icon"></span> -->
+				</a>
+ 
+</div>
+		</div>
+	</div>
+</body>
+</html>

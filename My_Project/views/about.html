@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../public/css/nav_styles.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/about.css">
+	 
+	<style type="text/css"></style>
+</head>
+
+<body style="background-color:white;">
+	<div class="nav_all" style="font-size: 12px;">
+		<main class='container'>
+			<div class='wrap'>
+				<input type='checkbox' id='checking' style='display:none;' />
+				<button class='blob' ><a href="http://localhost:8080/about">☎</a></button>
+				<button class='blob'><a href="http://localhost:8080/pet">❤</a></button>
+				<button class='blob'><a href="http://localhost:8080/msgs">✉</a></button>
+				<button class='blob'><a href="http://localhost:8080/team">😘</a></button>
+				<button class='blob'><a href="http://localhost:8080/login" class='icon_login'>🚀</a></button>
+				<button class='blob'><a href="http://localhost:8080/shop" class='icon_login'>★</a></button>
+				<button class='blob'><a href="http://localhost:8080/food">✿</a></button>
+				<button class='blob'><a href="http://localhost:8080/">🔎</a></button>
+				<label class='blob' for='checking'>
+					<span class='bar'></span>
+					<span class='bar'></span>
+					<span class='bar'></span>
+				</label>
+			</div>
+		</main>
+		<svg>
+			<defs>
+				<filter id="filt">
+					<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
+					<feBlend in2="filt" in="SourceGraphic" result="mix" />
+				</filter>
+			</defs>
+		</svg>
+	</div>
+	
+	<div class="up">
+		<div class="up-left">
+			<h2 style="font-family: 'Montserrat', sans-serif; font-size: 36px;color: black;">小小宠物店</h2>
+			
+			<p><span><img src="../public/img/maozhua.ico"></span>在这里你能找到最全面的宠物!</p>
+			<p><span><img src="../public/img/maozhua.ico"></span>在这里你能get最实惠的价格!</p>
+			<p><span><img src="../public/img/maozhua.ico"></span>在这里你的宠物将无条件拥有终身服务!</p>
+			<p><span><img src="../public/img/maozhua.ico"></span>小小宠物店本着专门为宠物提供宠物用品零售、宠物美容、宠物寄养、宠物活体销售的服务。我们的店铺将线上线下结合，实时做到为用户服务。并且负责免费咨询和查询。和宠物相关的物品，包括食物，玩具，宠物用具，本店都会提供到位。不论是大小型宠物，也会专门配备洗漱环境，专业医护服务人员贴心保护宠物安全卫生。欢迎您的惠顾。</p>
+			<p>
+		</div>
+		<div class="up-right">
+			<span><video width="400" height="350"  width: 50%;height: 50%;autoplay="autoplay" loop="loop" controls src="../public/video/pet.mp4">  </video></span>
+		</div>
+	</div>
+	<div  class="down" >
+		<h2>小小宠物店</h2>
+	</div>
+</html>

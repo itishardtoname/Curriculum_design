@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../public/css/init.css">
+		<link rel="stylesheet" type="text/css" href="../public/css/find.css">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+		<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src='../public/js/nav.js'></script>
+		<script type="text/javascript" src='../public/js/ajax.js'></script>
+		<link rel="stylesheet" href="../public/css/index.css">
+
+
+
+	</head>
+	<body>
+		<div id="top">
+			<div class="top-left">
+				<span>LIVELY-PETS</span>
+			</div>
+			<div class="top-right nav">
+				<div class="nav ">
+					<div class="nav_li">
+						<ul>
+							<li><a href="/">Search</a></li>
+							<li><a href="/about">About</a></li>
+							<li><a href="/pet">Pet</a></li>
+							<li><a href="/food">Food</a></li>
+							<li><a href="/shop">Shop</a></li>
+							<li><a href="/team">Team</a></li>
+							<li><a href="/msgs">Message</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<!-- 指示符 -->
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+
+				<!-- 轮播图片 -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img style="filter: " src="../public/img/login5.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="../public/img/3.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="../public/img/5.jpg">
+					</div>
+				</div>
+
+				<!-- 左右切换按钮 -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+			<div class="search">
+				<section class="container">
+					<form onsubmit="submitFn(this, event);">
+						<div class="search-wrapper">
+							<div class="input-holder">
+								<input type="text" class="search-input" placeholder="Type to search" />
+								<button class="search-icon"><span></span></button>
+							</div>
+							<span class="close" onclick="searchToggle(this, event);"></span>
+							<div class="result-container">
+
+							</div>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+<img src="../public/img/关闭.png" class="close_all">
+		<div class="find_all" style="display:none">
+		<div class="find_alll" style="margin-top: 50px;">	
+			<div class="find_pet">
+				<div class="title_top" style="background-color: #64c9b9;">
+					<div style="color:#64c9b9;">宠物</div>
+					<span class="top_pet">change  your </span>
+				</div>
+				<div class="creat_pet"></div>
+				<!-- <div class="pet">
+					<img src="../public/img/3.jpg"/>
+					<p>名称：<span>小白兔</span></p>
+					<p>价格：<span>900元 / 只</span></p>
+				</div> -->
+				
+			</div>
+			
+			<div class="find_food">
+				<div class="title_top" style="background-color: #00B0CF;">
+					<div style="color:#00B0CF;">食物</div>
+					<span class="top_food">change  your </span>
+				</div>
+				<div class="creat_food"></div>
+			</div>
+			
+			<div class="find_shop">
+				<div class="title_top" style="background-color: #FD604D;">
+					<div style="color:#FD604D;">商品</div>
+					<span class="top_shop">change  your </span>
+				</div>
+				<div class="creat_shop"></div>
+			</div>
+		</div>
+		</div>
+		<div class="find_detail" style="display:none">
+			<img src="../public/img/箭头1.png" class="all_more"/>
+			
+			<div class="find_detail_top">
+				
+			</div>
+		</div>
+		
+		<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+		</script>
+		<script type="text/javascript" src="../public/js/index_search.js"></script>
+		<script type="text/javascript" src="../public/js/find.js"></script>
+
+	</body>
+</html>
